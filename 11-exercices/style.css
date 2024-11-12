@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color:gainsboro;
+}
+
+h1 {
+    color: gainsboro;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 00px 10px 500px;
+    border: 5px #187498 solid
+}
+
+button {
+    background-color: #b0faff;
+    border: 3px #187498 solid;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 00px 10px 675px;
+}
+
+button:hover {
+    color: #b20634;
+}

@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(240, 183, 251);
+}
+.page {
+    background-color: red;
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+.header {
+    background-color: rgb(59, 14, 76);
+    width: 100%;
+    height: 90px;
+    order: 0;
+    /* Ensure it's the first element */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.site_nom {
+    margin: 10px;
+    margin-left: 20px;
+    color: rgb(203, 143, 215);
+    font-weight: 750;
+    font-size: 2.5rem;
+    font-family: Impact, sans-serif;
+}
+
+.lettre-blanche {
+    color: whitesmoke;
+}
+
+.main-nav {
+    background-color: rgb(126, 78, 152);
+    order: 1;
+    width: 100%;
+}
+
+.main-nav ul {
+    display: flex;
+    padding-left: 10px;
+    list-style: none;
+    justify-content: center;
+}
+
+.main-nav li {
+    list-style-type: none;
+    background-color: rgb(59, 14, 76);
+    padding: 5px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 4px;
+}
+
+.main-nav .accueil {
+    background-color: rgb(203, 143, 215);
+}
+
+.section {
+    background-color: rgb(238, 238, 238);
+    width: 780px;
+    height: 450px;
+    order: 3;
+}
+
+.site_section {
+    margin: 10px;
+}
+
+.site_aside {
+    color: aliceblue;
+    margin: 10px;
+}
+
+.main-nav a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.aside2 {
+    background-color: rgb(203, 143, 215);
+    width: 175px;
+    height: 450px;
+    order: 4;
+    border-left: 5px solid rgb(126, 78, 152);
+}
+
+.footer {
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    height: 90px;
+    order: 5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.footer ul {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer ul li {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+.footer a {
+    color: rgb(206, 130, 210);
+    text-decoration: none;
+    list-style-type: none;
+}
