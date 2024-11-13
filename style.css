@@ -8,17 +8,18 @@
 }
 :root {
     --text-color: #fff;
-    --background-color: #302b18;
+    --black-color: black;
+    --background-color: rgb(43, 43, 43);
     --primary-color: #f79021;
     --secondary-color: #db5f07;
     --menu-color: #bd5e00;
     --h1-font: 4.5rem;
 }
 body {
-    background-image: url('dirt.webp');
+    background-image: url('dirt.jpg');
     background-position: top;
-    background-repeat: no-repeat;
-    background-color: rgb(43, 43, 43);
+    background-repeat:repeat-x;
+    background-color: var(--black-color);
     color: var(--text-color);
     -webkit-tap-highlight-color: transparent;
 }
@@ -29,14 +30,16 @@ body {
     font-style: normal;
 }
 .image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        width: 100%;
-        height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 60px;
     }
-
+.titre2{
+    margin-bottom: 40px;
+}
 footer {
     background: var(--background-color);
     color: var(--text-color);
@@ -45,7 +48,9 @@ footer {
     font-size: 0.9rem;
 }
 
-//////
+.img{
+    padding-bottom: 50px;
+}
 
 .h1 title {
     font-weight: 400;
@@ -90,18 +95,20 @@ header {
 .o-btn {
     display: inline-block;
     padding: 14px 32px;
-    background-color: var(--primary-color);
+    background-color: var(--menu-color);
     color: var(--background-color);
     font-size: 20px;
     font-weight: 600;
-    border-radius: 13px;
-    box-shadow: var(--primary-color) 0px 2px 30px;
+    border-radius: 10px;
+    box-shadow: var(--black-color) 0px 2px 30px;
     margin-right: 25px;
     transition: all .50s ease;
 }
 
 .o-btn:hover {
     transform: scale(1.06) translateY(3px);
+    background-color: var(--secondary-color);
+    transition: 1s;
 }
 
 #menu-icon {
@@ -119,14 +126,57 @@ section {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh;
-    background: url(image.png);
+    height: 150vh;
+}
+.hero1 {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    padding-top: 30px;
+}
+.hero2 {
+    position: relative;
+    width: 100%;
+    height: 170vh;
+    background: url(cobblestone.png);
     background-size: cover;
     background-position: center;
+    padding-top: 30px;
 }
-
+.hero3 {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    padding-top: 30px;
+}
+.hero4 {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    background: url(deepslate.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+}
+.bedrock{
+    background: url(bedrock.jpg);
+    background-position: top;
+    background-repeat: repeat-x;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.video{
+    display: flex;
+    margin: auto;
+}
 .main-content {
-    padding-top: 300px;
+    margin-top: 240px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-shadow: var(--background-color) 0px 2px 20px;
 }
 
 .main-content h1 {
@@ -146,6 +196,85 @@ section {
     margin-bottom: 35px;
 }
 
+.main-content2 {
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-shadow: var(--background-color) 0px 2px 20px;
+
+}
+.main-content2 h1 {
+    font-size: var(--h1-font);
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-size: 4.3rem;
+}
+
+.main-content2 p {
+    width: 1100px;
+    max-width: 100%;
+    line-height: 1.8;
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+}
+.main-content2 ol li{
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+}
+.main-content3 {
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    box-shadow: var(--background-color) 0px 2px 20px;
+
+}
+
+.main-content3 h1 {
+    font-size: var(--h1-font);
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-size: 4.3rem;
+}
+
+.main-content3 p {
+    width: 850px;
+    max-width: 100%;
+    line-height: 1;
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+.main-content3 ol li {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+.color{
+    background-color: #8900af;
+    padding: 15px;
+    margin-right: 40px;
+}
+.color2 {
+    background-color: #db5f07;
+    padding: 15px;
+    margin-right: 40px;
+}
+.color3 {
+    background-color: #ffa807;
+    padding: 15px;
+    padding-bottom: 10px;
+}
 .btn1 {
     display: inline-block;
     padding: 14px 32px;
@@ -183,39 +312,6 @@ section {
     background: transparent;
 }
 
-/* Section des services */
-.services {
-    padding: 2rem 0;
-    margin-left: 100px;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.service {
-    background: var(--secondary-color);
-    padding: 2rem;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
-    transition: transform 0.3s;
-    border: 1px solid#fff;
-}
-
-.service:hover {
-    transform: translateY(-5px);
-    background: transparent;
-    transition: 2s;
-}
-
-.service i {
-    font-size: 2rem;
-    color: var(--accent-color);
-}
-
 h3 {
     margin-bottom: 20px;
     font-weight: 900;
@@ -224,8 +320,8 @@ h3 {
 
 /* Section témoignages */
 .testimonials {
-    background: -webkit-linear-gradient(50deg, #302b18, #db5f07, #f79021);
-    background: linear-gradient(50deg, #302b18, #db5f07, #f79021);
+    background: -webkit-linear-gradient( #150c2d, #db5f07, #f7ba21);
+    background: linear-gradient( #150c2d, #db5f07, #f7ba21);
     color: var(--background-color);
     padding: 3rem 3rem;
     text-align: center;
@@ -242,16 +338,28 @@ blockquote {
     background: #fff;
     color: var(--background-color);
     padding: 2rem;
+    font-size: 15px;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
 }
-
+blockquote cite{
+    font-size: 18px;
+}
 blockquote:hover {
     background: transparent;
     color: var(--text-color);
     transition: 1s;
 }
-
+.jeu{
+    padding-top: 80px;
+    display: flex;
+    margin: auto;
+}
+.jeu2{
+    display: flex;
+    margin: auto;
+    padding-bottom: 80px;
+}
 /* Pied de page */
 footer {
     background: var(--background-color);
